@@ -1,0 +1,4 @@
+FruitStandTracker
+=================
+
+This app tracks data for the Netter Center's Fruit Stands in Philadelphia
