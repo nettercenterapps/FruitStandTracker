@@ -72,14 +72,15 @@ public class StartActivity extends Activity {
     	this.startActivity(i);
     	this.finish();
     }
+    //method to clear local data
     private void clearLocalData(){
     	DatabaseHandler dh = DatabaseHandler.getInstance(this);
-
 		FruitStand[] allstands = dh.getAllFruitStands();
 		for (FruitStand stand: allstands){
 			dh.removeFruitStand(stand);
 		}
     }
+    
     private void saveStandToParse() {
     	//save the data both in multiple tables as it exists in sqlite, but also in one large table
     	//because we will be frequently pulling all the data to write it to a spreadsheet.
@@ -208,6 +209,8 @@ public class StartActivity extends Activity {
 			int transCt = 0;
 			double barginTotal = 0.0;
 			double cashTotal = 0.0;
+			//aggregate total information from purchases so that it is stored in the class that has all info. this
+			//saves the end user from doing the calculations
 			Purchase[] purchases = stand.getPurchases(this);
 			for (Purchase p : purchases) {
 				ParseObject PPurchase = new ParseObject("Purchase");
@@ -291,13 +294,12 @@ public class StartActivity extends Activity {
 			});
 		}
 	}
+    //dialog to confirm clearing data
     public void reallyClear(){
     	AlertDialog.Builder editalert = new AlertDialog.Builder(this);
 
 		editalert.setTitle("Really Clear Local Data?");
 		editalert.setMessage("Please enter the password");
-
-
 		final EditText input = new EditText(this);
 		
 		editalert.setView(input);
@@ -305,6 +307,7 @@ public class StartActivity extends Activity {
 		editalert.setPositiveButton("Done", new DialogInterface.OnClickListener() {
 		    public void onClick(DialogInterface dialog, int whichButton) {
 		    	String s = input.getText().toString();
+		    	//check if the password is correct
 		    	if(s.equals("iaasoncr")){
 		    		clearLocalData();
 		    		Toast mToast = Toast.makeText( thisActivity  , "data cleared successfully" , Toast.LENGTH_SHORT );

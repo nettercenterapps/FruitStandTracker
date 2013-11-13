@@ -163,7 +163,7 @@ public class PricingActivity extends Activity {
     	double kiwiPrice_bags = getPrice(R.id.kiwiPrice_bags);
     	double orangePrice_bags = getPrice(R.id.orangePrice_bags);
     	double pearPrice_bags = getPrice(R.id.pearPrice_bags);
-    	
+    	//add inventory items to database
 		currentStand.addProcessedInventoryItem(this, "apple", products_for_sale.get("apple"), applePrice);
 		currentStand.addProcessedInventoryItem(this, "pear", products_for_sale.get("pear"), pearPrice);
 		currentStand.addProcessedInventoryItem(this, "orange", products_for_sale.get("orange"), orangePrice);

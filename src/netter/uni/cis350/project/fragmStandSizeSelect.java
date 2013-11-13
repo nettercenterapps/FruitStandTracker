@@ -26,19 +26,15 @@ public class fragmStandSizeSelect extends DialogFragment {
             	String directionFlag = "";
             	switch(which) {
             	case 0:
-            		//Walking
             		directionFlag = getResources().getString(R.string.eight_dollars);
             		break;
             	case 1:
-            		//Biking
             		directionFlag = getResources().getString(R.string.eleven_dollars);
             		break;
             	case 2: 
-            		//Public transit
             		directionFlag = getResources().getString(R.string.fourteen_dollars);
             		break;
             	case 3:
-            		//Driving
             		directionFlag = getResources().getString(R.string.twenty_dollars);
             		break;
             	default:

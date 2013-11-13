@@ -39,7 +39,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 	private void prepopulateDatabase(SQLiteDatabase db) {
 
-		// prepopulate schools
+		// prepopulate schools - not used as of 11/2013
 		String[] schools = new String[] { "Gideon Elementary",
 				"Locke Elementary", "Bryant Elementary", "Lea Elementary",
 				"Alexander Wilson Elementary", "Huey Elementary",
@@ -547,7 +547,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		return items;
 	}
 
-	// Inserts or updates a EndInventoryItem in the database
+	// Inserts or updates a EndInventoryItem in the database -- not used as of 11/2013
 	protected synchronized boolean putEndInventoryItem(
 			final EndInventoryItem endInventoryItem) {
 		boolean success = false;

@@ -32,6 +32,7 @@ public class SaleActivity extends Activity {
         
         transactionCt = getIntent().getIntExtra("transactionCt", 0);
         setContentView(R.layout.activity_sale_person);
+        //text views and buttons to display items for sale
         TextView wholefruittext = (TextView)findViewById(R.id.whole_fruit_label);
         TextView bagsfruittext = (TextView)findViewById(R.id.bags_fruit_label);
 
@@ -76,6 +77,8 @@ public class SaleActivity extends Activity {
     	TextView smoothie_text = (TextView)findViewById(R.id.smoothie_label);
     	TextView mixed_bag_text = (TextView)findViewById(R.id.mixed_bag_label);
     	TextView granola_text = (TextView)findViewById(R.id.granola_label);
+    	
+    	//get processed inventory to determine which items to display for sale
     	DatabaseHandler dh = DatabaseHandler.getInstance(this);
 		FruitStand currentStand = dh.getCurrentFruitStand();
 		ProcessedInventoryItem[] PI = currentStand.getProcessedInventoryItems(this);
@@ -87,6 +90,7 @@ public class SaleActivity extends Activity {
 		}
     	boolean anyWholeFruit = false;
     	boolean anyBagsFruit = false;
+    	//set the items invisible if they are not being sold today
     	if(inv.get("apple") == 0){
     		apple_button.setVisibility(8);
     		apple_text.setVisibility(8);
@@ -359,6 +363,7 @@ public class SaleActivity extends Activity {
     
     
     public void clear_entries(View view){
+    	//clear the fruit sold, bags and whole totals, and reset the visible counters to x0
     	fruitSold.clear();
     	temp_bags_fruit = 0;
     	temp_whole_fruit = 0;
@@ -379,6 +384,7 @@ public class SaleActivity extends Activity {
     	Intent i = new Intent(this, PaymentActivity.class);	
     	Spinner age = (Spinner)findViewById(R.id.choosePerson);
     	String grade = (String)age.getSelectedItem();
+    	//pass on fruit sold, the age of the person buying, and the number of the transaction
     	i.putExtra("fruitSold", fruitSold);
     	i.putExtra("grade", grade);
 		i.putExtra("transactionCt", transactionCt);

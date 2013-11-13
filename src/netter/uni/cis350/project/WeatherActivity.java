@@ -92,8 +92,7 @@ public class WeatherActivity extends Activity {
     	//Launch to inventory
     	Intent i = new Intent(this, CashBoxAndCostActivity.class);
     	
-    	
-    	//Save our info
+    	//pass info to next activity
     	if(w != null ) {
             i.putExtra("weather", w);
             i.putExtra("temperature", String.valueOf(seekBar.getProgress()));

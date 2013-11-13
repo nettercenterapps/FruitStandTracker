@@ -137,8 +137,7 @@ public class InventoryActivity extends Activity {
     	//Launch to inventory2
     	Intent i = new Intent(this, InventoryMixedBags.class);
     	//Save our info
-    	//granola is put straight into products for sale as well because it is not processed any more
-    	
+    	//store items as start inventory items in the database
     	DatabaseHandler dh = DatabaseHandler.getInstance(this);
 		FruitStand currentStand = dh.getCurrentFruitStand();
 		currentStand.addStartInventoryItem(this, "apple", getQty(R.id.appleQty));

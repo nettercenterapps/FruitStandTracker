@@ -12,6 +12,7 @@
             backward-compatibility can go here.
         -->
     </style>
+    <!--background color used. To be replaced by school-specific colors & pics -->
 	<color name="test">#5000FFCC</color>
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">

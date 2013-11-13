@@ -134,6 +134,7 @@ public class Inventory2Activity extends Activity {
 	}
 
     public void continueToTransactionBase(View v) {
+    	//create hashmap of quantities to pass on
 		postinv.put("apple", fruitQtys[0]);
     	postinv.put("banana", fruitQtys[1]);
     	postinv.put("grape", fruitQtys[2]);

@@ -151,40 +151,7 @@ public class CashBoxAndCostActivity extends Activity {
 		EditText qtyEdit = (EditText) findViewById(cid);
 		qtyEdit.setText(""+qtyTemp);	
 	}
-	private void saveStandToParse() {
-		DatabaseHandler dh = DatabaseHandler.getInstance(this);
-
-		FruitStand stand = dh.getCurrentFruitStand();
-		ParseObject PFruitStand = new ParseObject("FruitStand");
-		PFruitStand.put("school", stand.school);
-		PFruitStand.put("date", stand.date);
-		PFruitStand.put("temperature", stand.temperature);
-		PFruitStand.put("weather", stand.weather);
-		PFruitStand.put("initial_cash", stand.initial_cash);
-		PFruitStand.put("stand_cost", stand.stand_cost);
-		PFruitStand.put("smoothie_cost", stand.smoothie_cost);
-		PFruitStand.put("additional_cost", stand.additional_cost);
-		PFruitStand.saveInBackground();
-
-		Totals totals = stand.getTotals(this);
-		if (totals != null) {
-			ParseObject PTotals = new ParseObject("Totals");
-			PTotals.put("parent", PFruitStand);
-			PTotals.put("cost", totals.cost);
-			PTotals.put("revenue", totals.revenue);
-			PTotals.put("final_cash", totals.final_cash);
-			PTotals.saveInBackground();
-		}
-
-		StaffMember[] staff = stand.getStaffMembers(this);
-		for (StaffMember s : staff) {
-			ParseObject PStaffMember = new ParseObject("StaffMember");
-			PStaffMember.put("parent", PFruitStand);
-			PStaffMember.put("name", s.name);
-			PStaffMember.put("is_volunteer", s.is_volunteer);
-			PStaffMember.saveInBackground();
-		}
-	}
+	
 	public void continueToPricing(View v) {
     	//Launch to inventory
     	Intent i = new Intent(this, InventoryActivity.class);
@@ -217,8 +184,9 @@ public class CashBoxAndCostActivity extends Activity {
     		}
             
     		DatabaseHandler dh = DatabaseHandler.getInstance(this);
-    		
+    		//get info from the fruit stand saved during info activity 
     		FruitStand stand_old = dh.getCurrentFruitStand();
+    		//update it with the weather information and cost information
             FruitStand stand = new FruitStand(stand_old.id,stand_old.school, (stand_old.date), Integer.parseInt(temperature), 
     				weather,Double.parseDouble(amt), Double.parseDouble(fruit_cost_amt), Double.parseDouble(smoothie_cost_amt), Double.parseDouble(other_cost_amt));
     		dh.putFruitStand(stand);

@@ -204,6 +204,7 @@ public class InventoryMixedBags extends Activity {
     private void toPricing(){
     	//Launch to transaction base
     	Intent i = new Intent(this, PricingActivity.class);
+    	//create hashmap of quantities to pass on
     	HashMap<String, Integer> postinv = new HashMap<String, Integer>();
     	postinv.put("granola", granolaCt);
     	postinv.put("apple", fruitQtys[0]);
@@ -227,7 +228,7 @@ public class InventoryMixedBags extends Activity {
     private void toInventory2(){
     	//Launch to transaction base
     	Intent i = new Intent(this, Inventory2Activity.class);
-
+    	//create hashmap of quantities to pass on
     	HashMap<String, Integer> postinv = new HashMap<String, Integer>();
     	postinv.put("granola", granolaCt);
     	postinv.put("mixed", fruitQtys[8]);

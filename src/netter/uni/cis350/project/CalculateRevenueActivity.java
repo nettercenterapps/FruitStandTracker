@@ -60,6 +60,7 @@ public class CalculateRevenueActivity extends FragmentActivity {
         	prices.put(s+"BARGAIN", 0.0);
 
         }
+        //aggregate info from purchases
 		Purchase[] purchasesSoFar = currentStand.getPurchases(this);
         for (Purchase p : purchasesSoFar){
         	if(p.item_name.contains("BARGAIN")){
@@ -110,6 +111,7 @@ public class CalculateRevenueActivity extends FragmentActivity {
 		String whole_fruit_equation = "Whole Fruit: \n";
 		String tab = "     ";
 		int extraLineCt = 0;
+		//only display items that were for sale
 		for (String item : wholeFruit){
 			if (saleTotals.containsKey(item)){
 				if (saleTotals.get(item) > 0){
@@ -119,6 +121,7 @@ public class CalculateRevenueActivity extends FragmentActivity {
 				}
 			}
 		}
+		//if no items were from sale, hide the category entirely
 		if (extraLineCt == wholeFruit.size()){
 			TextView wholeRevenEdit = (TextView)findViewById(R.id.wholeFruitRevenue);
 			wholeRevenEdit.setVisibility(8);
@@ -135,7 +138,7 @@ public class CalculateRevenueActivity extends FragmentActivity {
 		smoothielabel.setText("Smoothies: "+saleTotals.get("smoothie") + "x"+ prices.get("smoothie")+" =");
 		String bag_fruit_equation = "Bagged Fruit :\n";
 		int extraLineCtBags = 0;
-
+		//only display items that were for sale
 		for (String item : bagFruit){
 			if (saleTotals.containsKey(item)){
 				if (saleTotals.get(item) > 0){
@@ -145,6 +148,7 @@ public class CalculateRevenueActivity extends FragmentActivity {
 				}
 			}
 		}
+		//if no items for sale, don't display the box
 		if (extraLineCtBags == bagFruit.size()){
 			TextView bagRevenEdit = (TextView)findViewById(R.id.mixedBagRevenue);
 			bagRevenEdit.setVisibility(8);

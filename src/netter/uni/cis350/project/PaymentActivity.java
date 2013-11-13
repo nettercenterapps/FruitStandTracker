@@ -284,7 +284,9 @@ public class PaymentActivity extends Activity {
 			currentStand.addPurchase(this, "donation", 0, 0, 0, donationAmtAsDoub, grade);
 		}
 		//count is the transaction number coupon and junk are switches 0 or 1
-		//
+		//parse info into purchases. each bargain info has as its price the price divided by
+		//the number of items in the bargain. 
+		//save the purchase to the database
 			boolean firstAdjust = true;
 			for(FruitTuple p :purchasedItems){
 				double localPrice = p.price;
@@ -307,11 +309,11 @@ public class PaymentActivity extends Activity {
 
 			}
 		
-		//are these necessary?
 		coupons = 0;
 		junk_food = 0;
 		cash_total = 0.0;
 		bargain = false;
+		//pass transaction count back to the main transaction screen
 		transaction.putExtra("transactionCt", transactionCt);
 		this.startActivity(transaction);
 		this.finish();

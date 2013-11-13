@@ -6,12 +6,15 @@
         <item >Public Transit</item>
         <item >Driving</item>
     </string-array>
+    <!-- suggested fruit stand cost sizes used in cash and cost-->
     <string-array name="fruitStandSize">
         <item >Small = $8.00</item>
         <item >Medium = $11.00</item>
         <item >Large = $14.00</item>
         <item >Jumbo = $20.00</item>
     </string-array>
+    
+    <!-- product list used where a list of all products is needed -->
     <string-array name="productList">
         <item >apple</item>
         <item >pear</item>
@@ -32,6 +35,9 @@
         <item >grape_bags</item>
                
     </string-array>
+    
+  <!-- specific product lists used to distinguish whole and bag fruits in data tracking -->
+    
     <string-array name="wholeFruit">
         <item >apple</item>
         <item >pear</item>

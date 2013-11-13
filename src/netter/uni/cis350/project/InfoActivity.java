@@ -537,7 +537,7 @@ public class InfoActivity extends Activity {
     	if(vol1 != null && vol1.length() >= 1 && 
     			staff1 != null && staff1.length() >= 1
     			&& school != null && school.length() >= 1){
-
+    		//save stand with dummy values for info not collected yet. this will be updated in cashboxandcost
     		DatabaseHandler dh = DatabaseHandler.getInstance(this);
     		FruitStand stand = new FruitStand(school, (month + "/" + day + "/" + year), -1, 
     				"",-1.0, -1.0, -1.0, -1.0);

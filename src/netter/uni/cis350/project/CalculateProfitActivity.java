@@ -289,14 +289,13 @@ public class CalculateProfitActivity extends FragmentActivity {
 		}
 	}
 	private void logDataAndEndFruitStand(){
-		//saves the data to Parse
 	
 		Intent i = new Intent(this, FinishedPepActivity.class);
 		i.putExtra("profitable", profitReal > 0);
 		DatabaseHandler dh = DatabaseHandler.getInstance(this);
 		FruitStand currentStand = dh.getCurrentFruitStand();
+		//save totals to database
 		currentStand.addTotals(this, totalReal, revenue, endingCashbox, mathOverride, messageToDataTeam);
-		//saveStandToParse();
 		this.startActivity(i);
 		this.finish();
 	}

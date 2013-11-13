@@ -10,11 +10,7 @@
     
     <string name="app_name">FruitStandTracker</string>
     <string name="menu_settings">Settings</string>
-    
-    
-    
-    
-    
+
     <string name="school_title">What school are you at?</string>
     <string name="school_hint">Enter School Name Here</string>
     <string name="change_date">Click to change the date</string>
@@ -53,11 +49,6 @@
         <item>Add A School</item>
     </string-array>
 
-    
-    
-    
-    
-    
     <string name="title_activity_inventory">InventoryActivity</string>
     <string name="title_activity_inventory2">Inventory2Activity</string>
     <string name="weather_question">What\'s the weather like?</string>
@@ -87,8 +78,7 @@
 	<string name="zero">0</string>
 	<string name="granola_sold">Granola Bars Sold:</string>
 	<string name="bargin_total">Bargain Total:</string>
-		<string name="dona_total">Donation Total:</string>
-	
+	<string name="dona_total">Donation Total:</string>
 	
 	<string name="start_new">Start a new transaction</string>
 	<string name="finish_session">Finish Session</string>
@@ -121,8 +111,7 @@
     <string name="mixed">Mixed Bag</string>
     <string name="granola">Granola Bar</string>
     <string name="clear">Clear All</string>
-    
-    
+   
     <string name="items_checkout">Total Owed:</string>
     <string name="payment_option">How are they paying?</string>
     <string name="cash">Cash</string>
@@ -130,22 +119,13 @@
     <string name="junk_food">Apply Junk Food</string>
     <string name="donation">Any Donation?</string>
     <string name="bargain">Bargain</string>
-    
-    
-    
-    
-    
+
     <string name="calcProfit">Great job! Are you ready to use your business savvy to calculate your profit?</string>
 	<string name="sellFruit">Great job! Are you ready to start selling the best fruit in the world?</string>
 	<string name="smile_text">Remember to smile!</string>
 	<string name="ready">I\'m ready!</string>
 	<string name="smiley_description">Here is a picture of a smiley face</string>
 	
-	
-	
-	
-    
-
     <string name="inventory_instructions_future">Record your inventory before making fruit bags.
          Tap on the top button to increase the quantity.
          Tap the bottom button to decrease quantity.</string>
@@ -183,22 +163,19 @@
     <string name="smoothie_calc">Smoothies: 10 x $0.50 = </string>
     <string name="granola_calc">Granola: 10 x $0.50 = </string>
     <string name="coupon_calc">Coupon Total Value =      $0.50</string>
-        <string name="bargin_calc">Bargain Total Value =      $0.00</string>
+    <string name="bargin_calc">Bargain Total Value =      $0.00</string>
     
     <string name="junk_calc">Junk Food Total Value =   $0.50</string>
-        <string name="don_calc">Donation Total Value =   $0.50</string>
+    <string name="don_calc">Donation Total Value =   $0.50</string>
     
    	<string name="total_revenue">Total = \n Whole Fruit \n + Bagged Fruit \n  + Smoothies \n + Granola \n + Donations \n + Bargain Total \n - Coupons \n - Junk Food</string>
     <string name="submit">Submit</string>
     <string name="blank">          </string>
-    
-    
-    
-    
+
     <string name="revenue">Total Revenue : </string>
     <string name="ten">$10.00</string>
     <string name="fruit_cost">Fruit Costs : </string>
-        <string name="fruit_cost_title">What size fruit stand do you have?  </string>
+    <string name="fruit_cost_title">What size fruit stand do you have?  </string>
     
     <string name="fruit_cost_hint">What size fruit stand do you have? \n Small = $8.00 \n Medium = $11.00 \n Large = $14.00 \n Jumbo = $20.00</string>
     <string name="smoothie_cost">Smoothie Costs : </string>
@@ -214,11 +191,10 @@
     <string name="current_cash_hint">Count the money in your cashbox!</string>
     <string name="original_cash">Originally, you had $37.50 \n in the cash box</string>
     <string name="pricing_instructions">Enter the prices you\'re charging for each fruit.</string>
-    
 	<string name="eleven_dollars">11.00</string>
-		<string name="eight_dollars">8.00</string>
-		<string name="fourteen_dollars">14.00</string>
-			<string name="twenty_dollars">20.00</string>
+	<string name="eight_dollars">8.00</string>
+	<string name="fourteen_dollars">14.00</string>
+	<string name="twenty_dollars">20.00</string>
 		
 
 </resources>

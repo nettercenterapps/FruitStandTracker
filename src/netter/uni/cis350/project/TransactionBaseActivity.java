@@ -20,7 +20,7 @@ public class TransactionBaseActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        //initialize strings for the display of current totals at the top of this screen
         String _wholefruit = "0", _smoothies = "0", _bags = "0", _transactions = "0", _totalsales = "0", _granolabars = "0", _bargain = "0", _dona = "0", _total_sales_plus_bar = "0";
 
     	DatabaseHandler dh = DatabaseHandler.getInstance(this);
@@ -33,10 +33,9 @@ public class TransactionBaseActivity extends Activity {
 		double standardPriceSales = 0.0;
 		double donationTotal = 0.0;
 	    DecimalFormat df = new DecimalFormat("#.##");
-
+	    //get the purchases and calculate their current totals
         Purchase[] purchasesSoFar = currentStand.getPurchases(this);
         for (Purchase p : purchasesSoFar){
-        	Log.w("name", p.item_name);
         	if(p.num_coupons == 0 && p.num_tradeins == 0){
         		if (p.item_name.equalsIgnoreCase("donation")){
         			donationTotal+= p.amount_cash;
@@ -60,7 +59,7 @@ public class TransactionBaseActivity extends Activity {
         	}
         }
         transactionCt = getIntent().getIntExtra("transactionCt", 0);
-        
+        //set the running total strings based on the numbers gotten from purchases
         _transactions = String.valueOf(transactionCt);
         _granolabars = String.valueOf(granolaTotal);
         _smoothies = String.valueOf(smoothieTotal);
@@ -113,6 +112,7 @@ public class TransactionBaseActivity extends Activity {
 
 	public void newTransaction(View view){
 		Intent i = new Intent(this, SaleActivity.class);
+		//keep track of the number of transactions
 		i.putExtra("transactionCt", transactionCt+1);
 		this.startActivity(i);
 		this.finish();
