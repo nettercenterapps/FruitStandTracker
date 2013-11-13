@@ -1,0 +1,327 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="@color/test">
+    
+	<RelativeLayout    
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    tools:context=".CalculateProfitActivity" >
+	
+	    <TableLayout
+	        android:id="@+id/tableLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+	
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/revenue"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+
+	                android:text="@string/revenue" />
+	
+	            <TextView
+	                android:id="@+id/revenueValue"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/ten"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	                
+	            	<TextView
+	                	android:id="@+id/fruitStandCostLabel"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:text="@string/fruit_cost" />
+	            	
+	            	<TextView 
+	            	    android:id="@+id/fruitStandCostHint"
+	            	    android:layout_width="wrap_content"
+	               	    android:layout_height="wrap_content"
+	            	    android:text="@string/fruit_cost_hint"/>
+	            	
+		        </LinearLayout>
+		        	<RelativeLayout 
+    					android:layout_width="match_parent"
+    					android:layout_height="match_parent"
+    					android:orientation="horizontal">
+        				<TextView
+            				android:id="@+id/dollarSign1"
+            				android:layout_width="wrap_content"
+            				android:layout_height="wrap_content"
+            				android:gravity="bottom"
+           	 				android:textSize="25sp"
+            				android:text="@string/dollarSign"/>
+	            		<EditText
+	                		android:id="@+id/fruitStandCost"
+	                		android:layout_width="wrap_content"
+	                		android:layout_height="40sp"
+	                		android:layout_toRightOf="@id/dollarSign1"
+	                		android:ems="4"
+	                		android:inputType="numberDecimal" >
+	            		</EditText>
+	            	</RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <LinearLayout
+		            android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	            	
+	            	<TextView
+	                	android:id="@+id/smoothieCostLabel"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:text="@string/smoothie_cost" />
+	            	
+	            	<TextView 
+	            	    android:id="@+id/smoothieCostHint"
+	            	    android:layout_width="wrap_content"
+	            	    android:layout_height="wrap_content"
+	            	    android:text="@string/smoothie_hint"/>
+	            	
+				</LinearLayout>
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign2"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            	<EditText
+	                	android:id="@+id/smoothieCost"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="40sp"
+	                	android:layout_toRightOf="@id/dollarSign2"
+	                	android:ems="4"
+	                	android:inputType="numberDecimal" >
+	            	</EditText>
+	            </RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+				<LinearLayout
+		            android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	            	
+	            	<TextView
+	                	android:id="@+id/otherCostsLabel"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:text="@string/other_cost" />
+	            	
+	            	<TextView
+	            	    android:id="@+id/otherCostsHint"
+	            	    android:layout_width="wrap_content"
+	            	    android:layout_height="wrap_content"
+	            	    android:text="@string/other_cost_hint"
+	            	    />				
+	            </LinearLayout>
+	            <RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign3"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            	<EditText
+	                	android:id="@+id/otherCosts"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="40sp"
+	                	android:layout_toRightOf="@id/dollarSign3"
+	               	 	android:ems="4"
+	                	android:inputType="numberDecimal" >
+	            	</EditText>
+	            </RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	
+	                <TextView
+	                    android:id="@+id/totalCostsLabel"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/total_cost" />
+	
+	                <TextView
+	                    android:id="@+id/totalCostsDesc"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/total_cost_hint" />
+	
+	            </LinearLayout>
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign4"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            	<EditText
+	                	android:id="@+id/totalCosts"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="40sp"
+	                	android:layout_toRightOf="@id/dollarSign4"
+	                	android:ems="4"
+	                	android:inputType="numberDecimal" >
+	            	</EditText>
+	        	</RelativeLayout>
+	        </TableRow>
+	
+	       
+	
+	        <TableRow
+	            android:id="@+id/tableRow7"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	                
+	            <TextView
+	                android:id="@+id/profitLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/profit" />
+	
+	                <TextView
+	                    android:id="@+id/profitDesc"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="@string/profit_hint" />
+	
+	            </LinearLayout>
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign6"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            <EditText
+	                android:id="@+id/profit"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/dollarSign6"
+	                android:ems="4"
+	                android:inputType="number|numberDecimal|numberSigned" >
+	            </EditText>
+	            </RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow10"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+				<LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical" >
+	                
+	            	<TextView
+	                	android:id="@+id/endingCashboxLabel"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:text="@string/current_cash" />
+	            	
+	            	<TextView
+	            	    android:id="@+id/endingCashboxHint"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:text="@string/current_cash_hint"/>
+	            	<TextView
+	            	    android:id="@+id/originalCash"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:text="@string/original_cash"
+	            	    />
+				</LinearLayout>
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign7"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            <EditText
+	                android:id="@+id/endingCashbox"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_toRightOf="@id/dollarSign7"
+	                android:ems="4"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	            </RelativeLayout>
+	        </TableRow>
+	    </TableLayout>
+	
+	    <Button
+	        android:id="@+id/submit_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/tableLayout1"
+	        android:onClick="checkCalculations"
+	        android:text="@string/submit" />
+	
+	</RelativeLayout>
+</ScrollView>

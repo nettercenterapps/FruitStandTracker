@@ -1,0 +1,125 @@
+File containing Bundle variables and where they appear
+
+***PRICINGACTIVITY***
+apple_price
+banana_price
+grape_price
+kiwi_price
+orange_price
+pear_price
+granola_bars_price
+mixed_bags_price
+smoothies_price
+
+***INVENTORYACTIVITY***
+fruit_quantities
+	*array containing the number of each type of fruit recorded in the inventory*
+	 * 0 - apple*
+	 * 1 - banana*
+	 * 2 - grapes*
+	 * 3 - kiwi*
+	 * 4 - orange*
+	 * 5 - pear*
+	 * 6 - granola*
+	 * 7 - frozen fruit*
+	 * 8 - mixed bags*
+	 * 9 - smoothie*
+
+***INVENTORY2ACTIVITY***
+-fruit_quantities is accessed
+
+***TRANSACTIONBASEACTIVITY***
+whole_fruit
+smoothies
+mixed_bags
+total_cash
+transactions
+granolabars
+coupons_value
+junk_food_value
+
+***SALEACTIVITY***
+apple
+orange
+pear
+banana
+kiwi
+grape
+total
+temp_whole_fruit
+temp_apples
+temp_oranges
+temp_pears
+temp_kiwis
+temp_grapes
+temp_bananas
+temp_smoothie
+temp_mixed_bag
+temp_granola
+gender
+fruit
+grade
+*following seem to be overwritten in the bundle with new values*
+whole_fruit
+smoothies
+mixed_bags
+granolabars
+	 
+***PAYMENTACTIVITY***
+-fruit is accessed
+-total is accessed
+-temp_apples is accessed
+-apple_price is accessed
+-temp_oranges is accessed
+-orange_price is accessed
+-temp_pears is accessed
+-pear_price is accessed
+-temp_kiwis is accessed
+-kiwi_price is accessed
+-temp_grapes is accessed
+-grape_price is accessed
+-temp_bananas is accessed
+-banana_price is accessed
+-granolabars is accessed
+-granola_bars_price is accessed
+-mixed_bags is accessed
+-mixed_bags_price is accessed
+-temp_smoothie is accessed
+-smoothies_price is accessed
+-smoothies is accessed
+-gender is accessed
+-grade is accessed
+-transactions is accessed
+payment
+*following seem to be overwritten in the bundle with new values*
+coupons_value
+junk_food_value
+total_cash
+transactions
+
+***CALCULATEREVENUEACTIVITY***
+-fruit is accessed
+-apple_price is accessed
+-orange_price is accessed
+-pear_price is accessed
+-kiwi_price is accessed
+-grape_price is accessed
+-banana_price is accessed
+-smoothies is accessed
+-smoothies_price is accessed
+-mixed_bags is accessed
+-mixed_bags_price is accessed
+-granolabars is accessed
+-granola_bars_price is accessed
+-coupons_value is accessed
+-junk_food_value is accessed
+-total_cash is accessed
+
+***CALCULATEPROFITACTIVITY***
+-total_cash is accessed
+profitable
+
+***FINISHEDPEPACTIVITY***
+-profitable is accessed
+
+

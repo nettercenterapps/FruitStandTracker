@@ -1,0 +1,73 @@
+File containing Parse variable names
+Unless otherwise stated, information is saved to Parse through the use of the
+addInfo method in the DataBaser class. 
+
+***INFOACTIVITY***
+school
+year
+month 
+day
+vol1
+vol2
+vol3 
+vol4
+vol5
+vol6
+vol7
+vol8
+staff1
+staff2
+staff3
+staff4
+
+***WEATHERACTIVITY***
+weather
+temperature
+cashbox_starting_amount
+
+***INVENTORY2ACTIVITY***
+through the use of DataBaser.getInstance().savePreInventory(preinv), 
+preprocess_inventory will be created in Parse, which is a hashmap 
+of items to how many items there are: 
+	apples
+	grapes
+	kiwis
+	oranges
+	pears
+	granolas
+	frozen
+	mixed 
+	smoothie
+through the use of DataBaser.getInstance().savePostInventory(postinv), 
+postprocess_inventory will be created in Parse, which is a hashmap
+of fruit to how many items there are:
+	apples
+	grapes
+	kiwis
+	oranges
+	pears
+	granolas
+	frozen
+	mixed 
+	smoothie
+	
+***PAYMENTACVITITY***
+through the use of db.addTransaction(), another transaction is added
+to the array list of all transactions. For each transaction in the array list,
+a ParseObject named fruitStandTransactions will have the following information:
+	school
+	age
+	gender
+	purchases
+	payments
+	
+***CALCULATEPROFITACTIVITY***
+through the use of db.getStartingCashboxAmount(), cashbox_starting_amount is 
+accessed
+revenue
+total_costs
+donations
+profit
+ending_cashbox_amount
+*all bundle data is saved to parse	
+db.databaseItThoroughly() is called

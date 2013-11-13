@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@color/test">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:visibility="visible" >
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/person_title"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <Spinner
+	        android:id="@+id/choosePerson"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/grade_list" />
+
+	    
+
+	    <View
+	        android:id="@+id/View01"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20dp" />
+
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/purchase_choice"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <Button
+	            android:id="@+id/whole_fruit_button"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.73"
+	            android:onClick="whole_fruit_clicked"
+	            android:text="@string/whole_fruit" />
+
+	        <TextView
+	            android:id="@+id/whole_fruit_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/medium_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/fruitchoice"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/apples"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="apples_button"
+	                android:text="@string/apple" />
+
+	            <TextView
+	                android:id="@+id/apple_label"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <Button
+	                android:id="@+id/oranges"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="oranges_button"
+	                android:text="@string/orange" />
+
+	            <TextView
+	                android:id="@+id/orange_label"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/bananas"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="bananas_button"
+	                android:text="@string/banana" />
+
+	            <TextView
+	                android:id="@+id/banana_label"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <Button
+	                android:id="@+id/kiwis"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="kiwis_button"
+	                android:text="@string/kiwi" />
+
+	            <TextView
+	                android:id="@+id/kiwi_label"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/pears"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="pears_button"
+	                android:text="@string/pear" />
+
+	            <TextView
+	                android:id="@+id/pear_label"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <Button
+	                android:id="@+id/grapes"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="grapes_button"
+	                android:text="@string/grapes" />
+
+	            <TextView
+	                android:id="@+id/grape_label"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	    </LinearLayout>
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <Button
+	            android:id="@+id/bags_fruit_button"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.73"
+	            android:onClick="bags_fruit_clicked"
+	            android:text="Fruit Bags" />
+
+	        <TextView
+	            android:id="@+id/bags_fruit_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/medium_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+
+	    
+		<LinearLayout
+	        android:id="@+id/fruitchoice_bags"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <Button
+	            android:id="@+id/mixed_bag_button"
+	            android:layout_width="130dp"
+	            android:layout_height="wrap_content"
+	            android:onClick="mixed_bag_clicked"
+	            android:text="@string/mixed" />
+
+	        <TextView
+	            android:id="@+id/mixed_bag_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/medium_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/apples_bags"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="apples_bags_button"
+	                android:text="@string/apple" />
+
+	            <TextView
+	                android:id="@+id/apple_label_bags"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <Button
+	                android:id="@+id/oranges_bags"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="oranges_bags_button"
+	                android:text="@string/orange" />
+
+	            <TextView
+	                android:id="@+id/orange_label_bags"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/bananas_bags"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="bananas_bags_button"
+	                android:text="@string/banana" />
+
+	            <TextView
+	                android:id="@+id/banana_label_bags"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <Button
+	                android:id="@+id/kiwis_bags"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="kiwis_bags_button"
+	                android:text="@string/kiwi" />
+
+	            <TextView
+	                android:id="@+id/kiwi_label_bags"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <Button
+	                android:id="@+id/pears_bags"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="pears_bags_button"
+	                android:text="@string/pear" />
+
+	            <TextView
+	                android:id="@+id/pear_label_bags"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	            <Button
+	                android:id="@+id/grapes_bags"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:onClick="grapes_bags_button"
+	                android:text="@string/grapes" />
+
+	            <TextView
+	                android:id="@+id/grape_label_bags"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:text="@string/x0"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <Button
+	            android:id="@+id/smoothie_button"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.95"
+	            android:onClick="smoothie_clicked"
+	            android:text="@string/smoothie" />
+
+	        <TextView
+	            android:id="@+id/smoothie_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/medium_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+
+	    
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <Button
+	            android:id="@+id/granola_button"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.96"
+	            android:onClick="granola_clicked"
+	            android:text="@string/granola" />
+
+	        <TextView
+	            android:id="@+id/granola_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/medium_text"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	    </LinearLayout>
+	    
+	    <Button
+	        android:id="@+id/button_clear"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="#EE4000"
+	        android:onClick="clear_entries"
+	        android:text="@string/clear" />
+
+	    <View
+	        android:id="@+id/view1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60dp" />
+
+	    <Button
+	        android:id="@+id/button_continue"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:enabled="true"
+	        android:onClick="go_to_checkout"
+	        android:text="@string/continue_text" />
+	    
+	</LinearLayout>
+
+</ScrollView>

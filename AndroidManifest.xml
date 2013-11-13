@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="netter.uni.cis350.project"
+    android:versionCode="8"
+    android:versionName="3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="11" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="netter.uni.cis350.project" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fstracker_logo"
+        android:label="@string/app_name"
+        
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="netter.uni.cis350.project.StartActivity"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.WeatherActivity"
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.InventoryActivity"
+            
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.Inventory2Activity"
+            
+             >
+        </activity>
+        <activity android:name="netter.uni.cis350.project.SaleActivity" 
+            android:screenOrientation="portrait"
+		>            
+        </activity>
+        <activity android:name="netter.uni.cis350.project.InfoActivity"
+            android:screenOrientation="portrait"
+             >
+
+        </activity>
+        <activity 
+                    android:configChanges="keyboardHidden|orientation"
+            
+            android:name="netter.uni.cis350.project.PaymentActivity"    
+                 android:windowSoftInputMode="stateHidden" >
+
+        </activity>
+        <activity android:name="netter.uni.cis350.project.TransactionBaseActivity"
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.CalculateRevenueActivity"
+            
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.CalculateProfitActivity"
+            
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.PricingActivity"
+            
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.PreSalesPepActivity"
+            
+             >
+        </activity>
+         <activity
+            android:name="netter.uni.cis350.project.CashBoxAndCostActivity"
+            
+             >
+        </activity>
+        <activity
+            android:name="netter.uni.cis350.project.InventoryMixedBags"
+            
+             >
+        </activity>
+        <activity android:name="netter.uni.cis350.project.PreCalculationsPepActivity"
+             >
+        </activity>
+        <activity android:name="netter.uni.cis350.project.FinishedPepActivity"
+            ></activity>
+    </application>
+
+</manifest>

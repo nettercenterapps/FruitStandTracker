@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="directionOptions">
+        <item >Walking</item>
+        <item >Biking</item>
+        <item >Public Transit</item>
+        <item >Driving</item>
+    </string-array>
+    <string-array name="fruitStandSize">
+        <item >Small = $8.00</item>
+        <item >Medium = $11.00</item>
+        <item >Large = $14.00</item>
+        <item >Jumbo = $20.00</item>
+    </string-array>
+    <string-array name="productList">
+        <item >apple</item>
+        <item >pear</item>
+        <item >banana</item>
+        <item >kiwi</item>
+        <item >orange</item>
+        <item >grape</item>
+        
+        <item >smoothie</item>
+        <item >granola</item>
+        
+        <item >mixed</item>
+        <item >apple_bags</item>
+        <item >pear_bags</item>
+        <item >banana_bags</item>
+        <item >kiwi_bags</item>
+        <item >orange_bags</item>
+        <item >grape_bags</item>
+               
+    </string-array>
+    <string-array name="wholeFruit">
+        <item >apple</item>
+        <item >pear</item>
+        <item >banana</item>
+        <item >kiwi</item>
+        <item >orange</item>
+        <item >grape</item>
+    </string-array>
+    
+    <string-array name="bagFruit">
+        <item >mixed</item>
+        <item >apple_bags</item>
+        <item >pear_bags</item>
+        <item >banana_bags</item>
+        <item >kiwi_bags</item>
+        <item >orange_bags</item>
+        <item >grape_bags</item>
+               
+    </string-array>
+        
+    
+</resources>

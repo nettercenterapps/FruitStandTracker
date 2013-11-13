@@ -1,0 +1,5 @@
+Databaser.databaseItThoroughly
+SaleActivity.gender_button
+InventoryActivity.changeQty
+InfoActivity.setCurrentDateOnView
+WeatherActivity.continueToPricing

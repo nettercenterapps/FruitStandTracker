@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="start_button_label">Start Tracking Session</string>
+    <string name="backgroundImage">Background Image</string>
+    <string name="resume_button_label">Resume Tracking Session</string>
+    
+    <string name="parseAPIkey">9xU6S7w5jN2MpVmxp1YGuVOVXtEy54uXP9PAGmXV</string>
+    <string name="parsesecretkey">TNY4iuMDx193JkRQiKVzef4IWATSCTAJGF7j3K3C</string>
+    
+    <string name="app_name">FruitStandTracker</string>
+    <string name="menu_settings">Settings</string>
+    
+    
+    
+    
+    
+    <string name="school_title">What school are you at?</string>
+    <string name="school_hint">Enter School Name Here</string>
+    <string name="change_date">Click to change the date</string>
+    <string name="current_date">The date is (M-D-YYYY):</string>
+    <string name="volunteers_title">Who are the volunteers?</string>
+    <string name="names">First Name </string>
+    <string name="continue_text">Continue</string>
+    <string name="addV">Add a Volunteer</string>
+    <string name="staff_title">Who are the staff members?</string>
+    <string name="addS">Add a Staff Member</string>
+    <string-array name="school_list">
+        <item>Paul Robeson HS</item>
+        <item>Universal Charter AudenReid HS</item>
+        <item>Alexander Wilson Middle School</item>
+        <item>Academy at Palumbo</item>
+        <item>WorldCommunications Charter HS</item>
+        <item>Gideon, K-8</item>
+        <item>Comegys, K-8</item>
+        <item>Bryant, K-8</item>
+        <item>MYA</item>
+        <item>Mastery Charter</item>
+        <item>Friere Middle, 5-8</item>
+        <item>Friere HS</item>
+        <item>Multicultural Academy </item>
+        <item>Huey, K-8</item>
+        <item>Lea, K-8</item>
+        <item>Vare, 5-8</item>
+        <item>True Bright Science Academy HS</item>
+        <item>Bartram HS</item>
+        <item>Sayre HS</item>
+        <item>Parkway West HS</item>
+        <item>Mastery Shoe-Maker HS</item>
+        <item>School of the Future HS</item>
+        <item>West Philly High HS</item>
+        <item>Strawberry Mansion HS</item>
+        <item>Add A School</item>
+    </string-array>
+
+    
+    
+    
+    
+    
+    <string name="title_activity_inventory">InventoryActivity</string>
+    <string name="title_activity_inventory2">Inventory2Activity</string>
+    <string name="weather_question">What\'s the weather like?</string>
+    <string name="sunny">Sunny</string>
+    <string name="rainy">Rainy</string>
+    <string name="cloudy">Partly Cloudy</string>
+    <string name="snowy">Snowy</string>
+    <string name="temp_question">What\'s the temperature like?</string>
+    
+    
+    <string name="money_question">How much money is in the cash box?</string>
+        <string name="fruit_cost_question">How much did we pay for fruit?</string>
+            <string name="smoothie_cost_question">How much did we pay for smoothies?</string>
+                <string name="other_cost_question">How much did we pay for other products?</string>
+            
+        
+    <string name="dollarSign">$</string>
+    
+        <string name="preliminary_financial_info">Let\'s establish some fiscal basics about our business today: \n</string>
+    
+    
+
+	
+	<string name="total_sales">Total Sales:         </string>
+	<string name="standard_price_sales">Standard Price Sales:         </string>
+	
+	<string name="zero">0</string>
+	<string name="granola_sold">Granola Bars Sold:</string>
+	<string name="bargin_total">Bargain Total:</string>
+		<string name="dona_total">Donation Total:</string>
+	
+	
+	<string name="start_new">Start a new transaction</string>
+	<string name="finish_session">Finish Session</string>
+	
+    <string-array name="grade_list">
+        <item>Elementary (K-5)</item>
+        <item>Middle School (6—8)</item>
+        <item>High School (9—12)</item>
+        <item>School Staff</item>
+        <item>Parent</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Boys</item>
+        <item>Girls</item>
+    </string-array>
+    <string name="boys">Boys</string>
+    <string name="girls">Girls</string>
+    <string name="whole_fruit">Whole Fruit</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="x0">x0</string>
+    <string name="apple">Apple</string>
+    <string name="orange">Orange</string>
+    <string name="banana">Banana</string>
+    <string name="kiwi">Kiwi</string>
+    <string name="pear">Pear</string>
+    <string name="grapes">Grapes</string>
+    <string name="other">Other</string>
+    <string name="smoothie">Smoothie</string>
+    <string name="mixed">Mixed Bag</string>
+    <string name="granola">Granola Bar</string>
+    <string name="clear">Clear All</string>
+    
+    
+    <string name="items_checkout">Total Owed:</string>
+    <string name="payment_option">How are they paying?</string>
+    <string name="cash">Cash</string>
+    <string name="coupons">Apply Coupons</string>
+    <string name="junk_food">Apply Junk Food</string>
+    <string name="donation">Any Donation?</string>
+    <string name="bargain">Bargain</string>
+    
+    
+    
+    
+    
+    <string name="calcProfit">Great job! Are you ready to use your business savvy to calculate your profit?</string>
+	<string name="sellFruit">Great job! Are you ready to start selling the best fruit in the world?</string>
+	<string name="smile_text">Remember to smile!</string>
+	<string name="ready">I\'m ready!</string>
+	<string name="smiley_description">Here is a picture of a smiley face</string>
+	
+	
+	
+	
+    
+
+    <string name="inventory_instructions_future">Record your inventory before making fruit bags.
+         Tap on the top button to increase the quantity.
+         Tap the bottom button to decrease quantity.</string>
+    <string name="inventory_instructions">Record your inventory before making mixed bags.
+         Tap the top buttons to increase quantity.</string>
+    <string name="inventory_mixed_instructions">How many fruit bags and smoothies did you make?</string>
+    <string name="inventory2_instructions">Record how many of each whole fruit you are selling.</string>
+    <string name="inventory_summary">Summary of Inventory</string>
+    <string name="apple_label">Apples</string>
+    <string name="pear_label">Pears</string>
+    <string name="orange_label">Oranges</string>
+    <string name="grapes_label">Grapes</string>
+    <string name="kiwi_label">Kiwi</string>
+    <string name="banana_label">Banana</string>
+    <string name="granola_label">Granola Bars</string>
+    <string name="smoothie_label">Smoothies</string>
+    <string name="inventory2_summary">Summary of Inventory</string>
+    <string name="mixed_label">Mixed Bags</string>
+    <string name="person_title">Who\'s buying?</string>
+    <string name="purchase_choice">What are they buying?</string>
+    
+
+    <string name="total_sold">Total Sales:       </string>
+    <string name="whole_fruit_sold">Whole Fruit Sold:    </string>
+    <string name="mixed_bags_sold">Fruit Bags Sold:     </string>
+    <string name="smoothies_sold">Smoothies Sold:     </string>
+    <string name="total_transactions"># of Transactions:    </string>
+    <string name="title_activity_calculate_profit">CalculateProfitActivity</string>
+    <string name="title_activity_pricing">PricingActivity</string>
+    <string name="title_activity_pre_sales_pep">PreSalesPepActivity</string>
+    <string name="title_activity_inventory_mixed_bags">InventoryMixedBagsActivity</string>
+    
+    <string name="whole_fruit_calc">Whole Fruit: 10 x $0.50 = </string>
+    <string name="mixed_bag_calc">Mixed Bags: 10 x $0.50 = </string>
+    <string name="smoothie_calc">Smoothies: 10 x $0.50 = </string>
+    <string name="granola_calc">Granola: 10 x $0.50 = </string>
+    <string name="coupon_calc">Coupon Total Value =      $0.50</string>
+        <string name="bargin_calc">Bargain Total Value =      $0.00</string>
+    
+    <string name="junk_calc">Junk Food Total Value =   $0.50</string>
+        <string name="don_calc">Donation Total Value =   $0.50</string>
+    
+   	<string name="total_revenue">Total = \n Whole Fruit \n + Bagged Fruit \n  + Smoothies \n + Granola \n + Donations \n + Bargain Total \n - Coupons \n - Junk Food</string>
+    <string name="submit">Submit</string>
+    <string name="blank">          </string>
+    
+    
+    
+    
+    <string name="revenue">Total Revenue : </string>
+    <string name="ten">$10.00</string>
+    <string name="fruit_cost">Fruit Costs : </string>
+        <string name="fruit_cost_title">What size fruit stand do you have?  </string>
+    
+    <string name="fruit_cost_hint">What size fruit stand do you have? \n Small = $8.00 \n Medium = $11.00 \n Large = $14.00 \n Jumbo = $20.00</string>
+    <string name="smoothie_cost">Smoothie Costs : </string>
+    <string name="smoothie_hint">How much did you\n pay for smoothies?</string>
+    <string name="other_cost">Other Costs : </string>
+    <string name="other_cost_hint">What else did you\n pay for?</string>
+    <string name="total_cost">Total Costs :</string>
+    <string name="total_cost_hint">Fruit + Smoothie + Other Costs=</string>
+    <string name="donations">Donations : </string>
+    <string name="profit">Profit :</string>
+    <string name="profit_hint">Revenue - Total Costs=</string>
+    <string name="current_cash">Current Cashbox Amount: </string>
+    <string name="current_cash_hint">Count the money in your cashbox!</string>
+    <string name="original_cash">Originally, you had $37.50 \n in the cash box</string>
+    <string name="pricing_instructions">Enter the prices you\'re charging for each fruit.</string>
+    
+	<string name="eleven_dollars">11.00</string>
+		<string name="eight_dollars">8.00</string>
+		<string name="fourteen_dollars">14.00</string>
+			<string name="twenty_dollars">20.00</string>
+		
+
+</resources>

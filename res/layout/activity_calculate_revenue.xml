@@ -1,0 +1,238 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="@color/test">
+	    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    tools:context=".CalculateRevenueActivity">
+	
+	    <TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true" >
+	
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/wholeFruitTotalLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/whole_fruit_calc" />
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign9"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            	<EditText
+	                	android:id="@+id/wholeFruitRevenue"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_toRightOf="@id/dollarSign9"
+	                	android:ems="4"
+	                	android:inputType="numberDecimal" />
+				</RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/mixedBagTotalLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/mixed_bag_calc" />
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign8"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            	<EditText
+	                	android:id="@+id/mixedBagRevenue"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_toRightOf="@id/dollarSign8"
+	                	android:ems="4"
+	                	android:inputType="numberDecimal" >
+	            	</EditText>
+	            </RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/smoothieTotalLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="40sp"
+	                android:text="@string/smoothie_calc" />
+					<RelativeLayout 
+    					android:layout_width="match_parent"
+    					android:layout_height="match_parent"
+    					android:orientation="horizontal">
+        				<TextView
+            				android:id="@+id/dollarSign10"
+            				android:layout_width="wrap_content"
+            				android:layout_height="wrap_content"
+            				android:gravity="bottom"
+           	 				android:textSize="25sp"
+            				android:text="@string/dollarSign"/>
+	            		<EditText
+	                		android:id="@+id/smoothieRevenue"
+	                		android:layout_width="wrap_content"
+	                		android:layout_height="wrap_content"
+	                		android:layout_toRightOf="@id/dollarSign10"
+	                		android:ems="4"
+	                		android:inputType="numberDecimal" >
+	            		</EditText>
+	            	</RelativeLayout>
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/granolaTotalLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="40sp"
+	                android:text="@string/granola_calc" />
+				<RelativeLayout 
+    				android:layout_width="match_parent"
+    				android:layout_height="match_parent"
+    				android:orientation="horizontal">
+        			<TextView
+            			android:id="@+id/dollarSign11"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="bottom"
+           	 			android:textSize="25sp"
+            			android:text="@string/dollarSign"/>
+	            	<EditText
+	                	android:id="@+id/granolaRevenue"
+	                	android:layout_width="wrap_content"
+	                	android:layout_height="wrap_content"
+	                	android:layout_toRightOf="@id/dollarSign11"
+	                	android:ems="4"
+	                	android:inputType="numberDecimal" >
+	            	</EditText>
+	            	</RelativeLayout>
+	        </TableRow>
+	        
+	        <TableRow
+	            android:id="@+id/tableRow4point5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/barginLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="30dp"
+	                android:text="@string/bargin_calc" />
+	        </TableRow> 
+			
+	        <TableRow
+	            android:id="@+id/tableRow5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/couponLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="30dp"
+	                android:layout_weight=".70"
+	                android:text="@string/coupon_calc" />
+	        </TableRow> 
+			
+			<TableRow
+	            android:id="@+id/tableRow6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/junkfoodLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="30dp"
+	                android:text="@string/junk_calc" />
+	        </TableRow>  
+	        	<TableRow
+	            android:id="@+id/tableRowDon"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/donLable"
+	                android:layout_width="wrap_content"
+	                android:layout_height="30dp"
+	                android:layout_weight=".70"
+	                android:text="@string/don_calc" />
+	        </TableRow>  
+	        
+	        
+	        <TableRow
+	            android:id="@+id/tableRow7"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <TextView
+	                android:id="@+id/totalLabel"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text= "@string/total_revenue" />
+	        </TableRow>
+	        
+	        <TableRow
+	            android:id="@+id/tableRow8"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            <RelativeLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal">
+	            <TextView
+            			android:id="@+id/dollarSign12"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:gravity="left"
+           	 			android:textSize="33sp"
+            			android:text="@string/dollarSign"/>
+	            <EditText
+	                android:id="@+id/totalRevenue"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_toRightOf="@id/dollarSign12"
+	                android:ems="10"
+	                android:inputType="numberDecimal" >
+	            </EditText>
+	            </RelativeLayout>
+	    	</TableRow>
+	    
+	    </TableLayout>
+	
+	    <Button
+	        android:id="@+id/submit_calculations"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:onClick="submit_calculations"
+	        android:text="@string/submit" />
+	
+	</RelativeLayout>
+</ScrollView>

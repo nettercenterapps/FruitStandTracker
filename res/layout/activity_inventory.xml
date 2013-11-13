@@ -1,0 +1,379 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="@color/test">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp" 
+        android:isScrollContainer= "true" >
+
+        <TextView android:id="@+id/inventoryInstructions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:text="@string/inventory_instructions" /><LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/appleImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/apple" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/applePlus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" 
+                    android:text="+"
+                    android:onClick="qtyClicked" />
+
+                <EditText
+                    android:id="@+id/appleQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:text="0" 
+                    android:focusable="false"
+                    android:minWidth="40dp">
+                </EditText>
+
+                <Button
+                    android:id="@+id/appleMinus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="-"
+                    android:onClick="qtyClicked" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/bananaimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/banana" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bananaPlus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="+"
+                    android:onClick="qtyClicked" />
+
+                <EditText
+                    android:id="@+id/bananaQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                                        android:focusable="false"
+                    android:minWidth="40dp" />
+
+                <Button
+                    android:id="@+id/bananaMinus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="-"
+                                        android:focusable="false"
+                    
+                    android:onClick="qtyClicked" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/grapesImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/grapes" />
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/grapesPlus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="+"
+                    android:onClick="qtyClicked" />
+
+                <EditText
+                    android:id="@+id/grapesQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                                        android:focusable="false"
+                    
+                    android:minWidth="40dp" />
+
+                <Button
+                    android:id="@+id/grapesMinus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="-"
+                    android:onClick="qtyClicked" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/KiwiImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/kiwi" /><LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:orientation="vertical">
+
+           <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/kiwiPlus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="+"
+                    android:onClick="qtyClicked" />
+
+                <EditText
+                    android:id="@+id/kiwiQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                                        android:focusable="false"
+                    
+                    android:minWidth="40dp" />
+
+                <Button
+                    android:id="@+id/kiwiMinus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="-"
+                    android:onClick="qtyClicked" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/orangeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                
+                android:src="@drawable/orange" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/orangePlus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="+"
+                    android:onClick="qtyClicked" />
+
+                <EditText
+                    android:id="@+id/orangeQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                                        android:focusable="false"
+                    
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:minWidth="40dp" />
+
+                <Button
+                    android:id="@+id/orangeMinus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="-"
+                    android:onClick="qtyClicked" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pearImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/pear" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/pearPlus"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:onClick="qtyClicked" />
+
+                    <EditText
+                        android:id="@+id/pearQty"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:focusable="false"
+                        android:minWidth="40dp" />
+
+                    <Button
+                        android:id="@+id/pearMinus"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:onClick="qtyClicked" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/granolaImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/granola" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/granolaPlus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="+"
+                    android:onClick="qtyClicked" />
+
+                <EditText
+                    android:id="@+id/granolaQty"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:focusable="false"
+                    android:minWidth="40dp" />
+
+                <Button
+                    android:id="@+id/granolaMinus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="-"
+                    android:onClick="qtyClicked" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/frozenImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:src="@drawable/frozen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/frozenPlus"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:text="+"
+                        android:onClick="qtyClicked" />
+
+                    <EditText
+                        android:id="@+id/frozenQty"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:focusable="false"
+                        android:minWidth="40dp" />
+
+                    <Button
+                        android:id="@+id/frozenMinus"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:onClick="qtyClicked" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/inventoryContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:onClick="continueToInventory2"
+            android:text="Continue" />
+        
+    </LinearLayout>
+    
+</ScrollView>
